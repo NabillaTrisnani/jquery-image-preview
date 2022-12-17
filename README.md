@@ -1,3 +1,3 @@
-# jquery-image-preview
+# Create Image Preview with jQuery
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-vv7fou)
+Demo: [https://stackblitz.com/edit/web-platform-vv7fou](https://stackblitz.com/edit/web-platform-vv7fou)
