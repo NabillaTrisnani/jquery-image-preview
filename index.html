@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Image Preview with Jquery</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <h3 class="title">Image Preview with Jquery</h3>
+    <div class="card-input-image" id="card_input_image">
+      <input
+        type="file"
+        id="input_image"
+        name="foto[]"
+        class="input-image"
+        accept=".png, .jpg, .jpeg"
+        onchange="onchange_value('input_image', 'card_input_image')"
+      />
+      <label for="input_image" class="label-upload-image">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m1 5h-2v4H7v2h4v4h2v-4h4v-2h-4V7Z"
+          />
+        </svg>
+        Upload File
+      </label>
+      <button
+        type="button"
+        class="btn-delete"
+        onclick="delete_value('input_image', 'card_input_image')"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="1em"
+          height="1em"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="0 0 256 256"
+        >
+          <path
+            fill="currentColor"
+            d="M208.5 191.5a12 12 0 0 1 0 17a12.1 12.1 0 0 1-17 0L128 145l-63.5 63.5a12.1 12.1 0 0 1-17 0a12 12 0 0 1 0-17L111 128L47.5 64.5a12 12 0 0 1 17-17L128 111l63.5-63.5a12 12 0 0 1 17 17L145 128Z"
+          />
+        </svg>
+        Delete
+      </button>
+      <img src="" id="img_preview" class="image-preview" alt="" />
+    </div>
+  </body>
+</html>
